@@ -25,6 +25,7 @@ endif(MSVC)
 ```
 
 # Better Way
+https://cmake.org/cmake/help/latest/prop_tgt/MSVC_RUNTIME_LIBRARY.html
 ```Cmake
 set_property(TARGET yourproject PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
 ```
