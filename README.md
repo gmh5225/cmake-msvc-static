@@ -23,3 +23,8 @@ if (MSVC)
     endforeach()
 endif(MSVC)
 ```
+
+# Better Way
+```Cmake
+set_property(TARGET yourproject PROPERTY MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+```
